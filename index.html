@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio IT Quality Assurance & Core Banking Specialist - Sheila Riva Rezqian">
+  <title>Sheila Riva Rezqian | IT Quality Assurance & Core Banking Portfolio</title>
+
+  <!-- Google Fonts: Pixel & Readable Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Pixel Portfolio Stylesheet -->
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+
+  <!-- CRT Scanlines Effect Overlay (dinonaktifkan untuk kenyamanan visual user awam) -->
+
+  <!-- Floating Audio & CRT Effect Controls -->
+  <!-- <div class="quick-controls">
+    <button class="control-btn active" id="toggle-sound" title="Aktifkan / Nonaktifkan Efek Suara 8-Bit">
+      🔊 Audio: ON
+    </button>
+    <button class="control-btn active" id="toggle-scanlines" title="Aktifkan / Nonaktifkan Efek Layar CRT Retro">
+      📺 CRT Filter
+    </button>
+  </div> -->
+
+  <!-- Header / Navigation Bar -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="#hero" class="nav-brand" id="brand-link">
+          <div class="brand-icon">🛡️</div>
+          <div class="brand-title">
+            <span>SHEILA.QA</span>
+            <span class="brand-badge">CORE BANKING QA SPECIALIST</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link"><span>[1]</span> Status</a></li>
+          <li><a href="#inventory" class="nav-link"><span>[2]</span> Inventory</a></li>
+          <li><a href="#projects" class="nav-link"><span>[3]</span> Dungeons</a></li>
+          <!-- <li><a href="#test-runner" class="nav-link"><span>[4]</span> Test Lab</a></li>
+          <li><a href="#arcade" class="nav-link"><span>[5]</span> Arcade</a></li> -->
+          <li><a href="#quest-log" class="nav-link"><span>[6]</span> Quest Log</a></li>
+          <li><a href="#education" class="nav-link"><span>[7]</span> Education</a></li>
+          <li><a href="#guild-hall" class="nav-link"><span>[8]</span> Contact</a></li>
+        </ul>
+
+        <a href="https://www.linkedin.com/in/sheila-riva-rezqian" target="_blank" rel="noopener noreferrer"
+          class="btn-pixel btn-primary" id="btn-nav-quest">
+          ⚔️ LINKEDIN PROFILE
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section: Player HUD Profile -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="player-hud pixel-box pixel-box-glow-cyan">
+        <div class="hud-decor-corner tl"></div>
+        <div class="hud-decor-corner tr"></div>
+        <div class="hud-decor-corner bl"></div>
+        <div class="hud-decor-corner br"></div>
+
+        <!-- Avatar Column -->
+        <div class="player-avatar-col">
+          <div class="avatar-frame">
+            <div class="pixel-character">👩‍💻</div>
+          </div>
+          <div class="player-level-badge">LVL 24 QA SPECIALIST</div>
+          <h3 class="player-avatar-name">Sheila Riva R.</h3>
+          <p class="player-class-sub">Class: Core Banking Guardian</p>
+
+          <div class="player-status-tag">
+            <span class="status-blink"></span>
+            <span>AVAILABLE FOR HIRE</span>
+          </div>
+
+          <div class="player-contact-snippet">
+            📍 Jakarta, Indonesia<br>
+            📞 +62 087882346039
+          </div>
+        </div>
+
+        <!-- Player Info & Stats Column -->
+        <div class="player-info-col">
+          <div>
+            <span class="hero-tag">⚡ PLAYER PROFILE • IT QUALITY ASSURANCE & IT BUSINESS ANALYST</span>
+            <h1 class="player-name">
+              SHEILA RIVA REZQIAN
+            </h1>
+            <div class="player-class">
+              🏦 Core Banking (BNI Placement) • 🔍 SQL DB Validation • 📋 End-to-End UAT • 🎯 3+ Years Exp
+            </div>
+            <p class="player-bio">
+              <strong>Result-oriented IT Professional</strong> dengan pengalaman lebih dari <strong>3+ tahun</strong>
+              dalam <em>software testing</em>, <em>IT business analysis</em>, dan pelacakan sistem <em>financial
+                technology</em>. Memiliki rekam jejak terbukti dalam analisis proses bisnis, pengelolaan alur sistem
+              teknis, penulisan kueri SQL untuk validasi database, serta menjembatani tim teknis dengan business
+              stakeholder melalui dokumentasi fungsional dan eksekusi UAT end-to-end pada sistem perbankan nasional.
+            </p>
+          </div>
+
+          <!-- HUD Status Bars -->
+          <div class="hud-bars">
+            <div class="hud-bar-row">
+              <span class="hud-bar-label" style="color: var(--hp-red);">HP (QA UAT)</span>
+              <div class="hud-bar-track">
+                <div class="hud-bar-fill hp"></div>
+              </div>
+              <span class="hud-bar-val">100/100</span>
+            </div>
+
+            <div class="hud-bar-row">
+              <span class="hud-bar-label" style="color: var(--mana-blue);">MP (SQL DB)</span>
+              <div class="hud-bar-track">
+                <div class="hud-bar-fill mp"></div>
+              </div>
+              <span class="hud-bar-val">98/100</span>
+            </div>
+
+            <div class="hud-bar-row">
+              <span class="hud-bar-label" style="color: var(--xp-gold);">XP (TESTS)</span>
+              <div class="hud-bar-track">
+                <div class="hud-bar-fill xp"></div>
+              </div>
+              <span class="hud-bar-val">3,000+ Tests</span>
+            </div>
+          </div>
+
+          <!-- Hero Actions -->
+          <div class="hero-actions">
+            <a href="#guild-hall" class="btn-pixel btn-primary" id="btn-hero-hire">
+              ✉️ HUBUNGI / HIRE ME
+            </a>
+            <a href="#projects" class="btn-pixel btn-secondary" id="btn-hero-projects">
+              📜 LIHAT PROYEK & DUNGEONS
+            </a>
+            <a href="#test-runner" class="btn-pixel btn-gold" id="btn-hero-lab">
+              💻 TEST LAB SIMULATOR
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QA Battle Stats Metrics -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon-frame">📋</div>
+          <div class="stat-details">
+            <span class="stat-number" style="color: var(--neon-cyan);">3,000+</span>
+            <span class="stat-label">Test Cases Executed (Join Testing)</span>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon-frame">⏳</div>
+          <div class="stat-details">
+            <span class="stat-number" style="color: var(--xp-gold);">3+ Years</span>
+            <span class="stat-label">Cumulative IT QA & BA Experience</span>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon-frame">🗄️</div>
+          <div class="stat-details">
+            <span class="stat-number" style="color: var(--neon-green);">100%</span>
+            <span class="stat-label">Database Sync & Settlement Validated</span>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon-frame">🏆</div>
+          <div class="stat-details">
+            <span class="stat-number" style="color: var(--hp-red);">24th Rank</span>
+            <span class="stat-label">BPJS HealthKathon 2.0 Semi-Finalist</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inventory / Skills System -->
+  <section class="skills-section" id="inventory">
+    <div class="container">
+      <div class="section-header-pixel">
+        <span class="section-icon">🎒</span>
+        <h2 class="section-title pixel-heading">EQUIPMENT & SKILL INVENTORY</h2>
+        <span class="section-subtitle">[KEAHLIAN TEKNIS & TOOLS]</span>
+      </div>
+
+      <div class="inventory-layout">
+        <!-- Slot 1: Testing & QA Arsenal -->
+        <div class="inventory-slot-box">
+          <h3 class="category-title">
+            <span>🗡️</span> TESTING & QA ARSENAL
+          </h3>
+          <div class="skill-items-grid">
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span class="item-icon">📝</span>
+                <span class="item-name">Manual & Regression Testing</span>
+              </div>
+              <span class="item-rarity-badge rarity-legendary">LEGENDARY</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span class="item-icon">🤝</span>
+                <span class="item-name">UAT & Joint Testing (3,000+ Cases)</span>
+              </div>
+              <span class="item-rarity-badge rarity-legendary">LEGENDARY</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span class="item-icon">📱</span>
+                <span class="item-name">Front-End & Back-End Testing</span>
+              </div>
+              <span class="item-rarity-badge rarity-epic">EPIC</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span class="item-icon">🧪</span>
+                <span class="item-name">Usability & API Testing</span>
+              </div>
+              <span class="item-rarity-badge rarity-rare">RARE</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slot 2: Database & API Gear -->
+        <div class="inventory-slot-box">
+          <h3 class="category-title">
+            <span>🛡️</span> DATABASE & API GEAR
+          </h3>
+          <div class="skill-items-grid">
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span class="item-icon">🗄️</span>
+                <span class="item-name">SQL Queries (DB Validation)</span>
+              </div>
+              <span class="item-rarity-badge rarity-legendary">LEGENDARY</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span class="item-icon">🚀</span>
+                <span class="item-name">Postman (API Testing)</span>
+              </div>
+              <span class="item-rarity-badge rarity-epic">EPIC</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span class="item-icon">🤖</span>
+                <span class="item-name">Katalon Studio</span>
+              </div>
+              <span class="item-rarity-badge rarity-epic">EPIC</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span class="item-icon">🐙</span>
+                <span class="item-name">Git & GitHub</span>
+              </div>
+              <span class="item-rarity-badge rarity-rare">RARE</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slot 3: Banking & Management Tools -->
+        <div class="inventory-slot-box">
+          <h3 class="category-title">
+            <span>🧪</span> BANKING & MANAGEMENT GEAR
+          </h3>
+          <div class="skill-items-grid">
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span class="item-icon">🏦</span>
+                <span class="item-name">Core Banking (TIPlus & GBO)</span>
+              </div>
+              <span class="item-rarity-badge rarity-legendary">LEGENDARY</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span class="item-icon">🌍</span>
+                <span class="item-name">KCLN London Workflow Alignment</span>
+              </div>
+              <span class="item-rarity-badge rarity-legendary">LEGENDARY</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span class="item-icon">📋</span>
+                <span class="item-name">TestRail & Redmine</span>
+              </div>
+              <span class="item-rarity-badge rarity-epic">EPIC</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span class="item-icon">📊</span>
+                <span class="item-name">Jira & Google Workspace</span>
+              </div>
+              <span class="item-rarity-badge rarity-rare">RARE</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slot 4: Programming & UI/UX Grimoires -->
+        <div class="inventory-slot-box">
+          <h3 class="category-title">
+            <span>📜</span> CODE & UI/UX GRIMOIRES
+          </h3>
+          <div class="skill-items-grid">
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span class="item-icon">🎨</span>
+                <span class="item-name">Figma (UI/UX & Prototyping)</span>
+              </div>
+              <span class="item-rarity-badge rarity-legendary">LEGENDARY</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span class="item-icon">🐍</span>
+                <span class="item-name">Python Programming</span>
+              </div>
+              <span class="item-rarity-badge rarity-epic">EPIC</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span class="item-icon">🌐</span>
+                <span class="item-name">HTML5, CSS3, Bootstrap 5</span>
+              </div>
+              <span class="item-rarity-badge rarity-epic">EPIC</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name-wrap">
+                <span class="item-icon">💻</span>
+                <span class="item-name">JavaScript & Web Development</span>
+              </div>
+              <span class="item-rarity-badge rarity-rare">RARE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects / Dungeon Clears -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="section-header-pixel">
+        <span class="section-icon">🗺️</span>
+        <h2 class="section-title pixel-heading">DUNGEON CLEARS & PROJECTS</h2>
+        <span class="section-subtitle">[PENGALAMAN PROYEK REAL-WORLD]</span>
+      </div>
+
+      <!-- Filters -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">ALL QUESTS (5)</button>
+        <button class="filter-btn" data-filter="banking">CORE BANKING</button>
+        <button class="filter-btn" data-filter="health">BPJS HEALTHKATHON</button>
+        <button class="filter-btn" data-filter="ux">UI/UX & CMS</button>
+        <button class="filter-btn" data-filter="lms">EDUWAVE LMS</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        <!-- Project 1: Swadharma BNI -->
+        <div class="project-card" data-category="banking">
+          <div class="project-card-header">
+            <span class="arcade-text" style="color: var(--neon-green);">DUNGEON #01: BNI CORE BANKING</span>
+            <span class="dungeon-difficulty">LEVEL: CRITICAL ★★★★★</span>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">TIPlus Core Banking System & Workflow Improvement</h3>
+            <p class="project-desc">
+              Pengujian regresi komprehensif untuk workflow aplikasi TIPlus dan limit kredit di modul kritis (Import,
+              Export, Garansi Bank Online / GBO). Memvalidasi transaksi Front-End & Back-End dengan kueri SQL database
+              untuk memastikan settlement pembayaran berhasil, validasi hotfix defect produksi, serta mendukung
+              inisiatif workflow KCLN London.
+            </p>
+            <div class="qa-metrics-pill-grid">
+              <div class="qa-metric-item">
+                Placement:
+                <strong>PT Bank Negara Indonesia Tbk</strong>
+              </div>
+              <div class="qa-metric-item">
+                Scope:
+                <strong>Import, Export, GBO, KCLN</strong>
+              </div>
+            </div>
+            <div class="tech-tags">
+              <span class="tech-tag">TIPlus</span>
+              <span class="tech-tag">SQL Validation</span>
+              <span class="tech-tag">UAT Execution</span>
+              <span class="tech-tag">Hotfix Validation</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="project-company-badge">PT. SWADHARMA DUTA DATA</span>
+              <a href="#test-runner" class="btn-pixel btn-secondary"
+                style="font-size: 0.65rem; padding: 0.4rem 0.8rem;">
+                SIMULATE TEST
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: NTT DATA ID BNI -->
+        <div class="project-card" data-category="banking">
+          <div class="project-card-header">
+            <span class="arcade-text" style="color: var(--neon-cyan);">DUNGEON #02: TRADE SYSTEM BNI</span>
+            <span class="dungeon-difficulty">LEVEL: ADVANCED ★★★★★</span>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Limit Trade System Import & Trade Workflow Improvement</h3>
+            <p class="project-desc">
+              Berperan sebagai Co-coordinator proyek "Limit Trade System Import" dan Junior QA pada "Trade Workflow
+              Improvement (Phase 1)". Melakukan validasi sinkronisasi data antar core system dan surrounding banking
+              app, konfigurasi environment produksi, eksekusi 3,000+ test case Join Testing, serta mengoptimalkan defect
+              management bersama PO, PM, dan Developer.
+            </p>
+            <div class="qa-metrics-pill-grid">
+              <div class="qa-metric-item">
+                Test Cases:
+                <strong>3,000+ Joint Testing</strong>
+              </div>
+              <div class="qa-metric-item">
+                Role:
+                <strong>Co-coordinator & QA</strong>
+              </div>
+            </div>
+            <div class="tech-tags">
+              <span class="tech-tag">Trade Systems</span>
+              <span class="tech-tag">Core Banking</span>
+              <span class="tech-tag">Production Config</span>
+              <span class="tech-tag">Defect Management</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="project-company-badge">NTT DATA ID</span>
+              <a href="#test-runner" class="btn-pixel btn-secondary"
+                style="font-size: 0.65rem; padding: 0.4rem 0.8rem;">
+                SIMULATE TEST
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: BPJS Healthkathon -->
+        <div class="project-card" data-category="health">
+          <div class="project-card-header">
+            <span class="arcade-text" style="color: var(--xp-gold);">DUNGEON #03: BPJS HEALTHKATHON 2.0</span>
+            <span class="dungeon-difficulty">ACHIEVEMENT: SEMI-FINALIST</span>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">JKN Voice Care - Quality Assurance & UI/UX Design</h3>
+            <p class="project-desc">
+              Membuat test case berbasis spesifikasi fungsional, menangani manual testing web app, pelaporan bug, serta
+              memimpin proses ideasi konsep produk "JKN Voice Care". Berhasil meraih peringkat ke-24 dari 52 tim pada
+              babak kualifikasi dan peringkat ke-66 dari 118 tim pada babak eliminasi.
+            </p>
+            <div class="qa-metrics-pill-grid">
+              <div class="qa-metric-item">
+                Qualifying Rank:
+                <strong>24th / 52 Teams</strong>
+              </div>
+              <div class="qa-metric-item">
+                Elimination Rank:
+                <strong>66th / 118 Teams</strong>
+              </div>
+            </div>
+            <div class="tech-tags">
+              <span class="tech-tag">Manual Testing</span>
+              <span class="tech-tag">UI/UX Design</span>
+              <span class="tech-tag">Spreadsheets</span>
+              <span class="tech-tag">Ideation</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="project-company-badge">BPJS KESEHATAN (2023)</span>
+              <a href="#test-runner" class="btn-pixel btn-secondary"
+                style="font-size: 0.65rem; padding: 0.4rem 0.8rem;">
+                VIEW DETAILS
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Eureka Edutech -->
+        <div class="project-card" data-category="ux">
+          <div class="project-card-header">
+            <span class="arcade-text" style="color: var(--neon-pink);">DUNGEON #04: EUREKA EDUTECH</span>
+            <span class="dungeon-difficulty">MSIB KAMPUS MERDEKA</span>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">CMS Web Testing & Double Diamond UX Research</h3>
+            <p class="project-desc">
+              Melakukan pengujian manual untuk website Content Management System (CMS), pelaporan bug koordinatif dengan
+              tim dev, riset pengguna dengan model double diamond, inovasi Landing Page Eureka Edutech, perombakan CMS
+              Divisi Bank Soal, serta pengujian usability (efektivitas, efisiensi, dan kepuasan pengguna).
+            </p>
+            <div class="qa-metrics-pill-grid">
+              <div class="qa-metric-item">
+                Impact:
+                <strong>Improved UX & Efficiency</strong>
+              </div>
+              <div class="qa-metric-item">
+                Method:
+                <strong>Double Diamond UX</strong>
+              </div>
+            </div>
+            <div class="tech-tags">
+              <span class="tech-tag">CMS Testing</span>
+              <span class="tech-tag">Usability Testing</span>
+              <span class="tech-tag">User Research</span>
+              <span class="tech-tag">Figma</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="project-company-badge">EUREKA EDUTECH (2023)</span>
+              <a href="#test-runner" class="btn-pixel btn-secondary"
+                style="font-size: 0.65rem; padding: 0.4rem 0.8rem;">
+                VIEW DETAILS
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: EduWave LMS BabaStudio -->
+        <div class="project-card" data-category="lms ux">
+          <div class="project-card-header">
+            <span class="arcade-text" style="color: var(--neon-cyan);">DUNGEON #05: EDUWAVE LMS</span>
+            <span class="dungeon-difficulty">SCORE: 93.00/100 (BEST GROUP)</span>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">EduWave Learning Management System - BabaStudio</h3>
+            <p class="project-desc">
+              Pengumpulan data LMS dengan 3 metode riset, analisis pain point pengguna (Persona, Empathy Map, HMW),
+              ideasi Crazy 8's, Information Architecture & User Flow, perancangan 5 dari 10 section High-Fidelity &
+              Prototyping di Figma, serta asistensi tim developer menggunakan HTML, CSS, JavaScript, dan Bootstrap 5.
+            </p>
+            <div class="qa-metrics-pill-grid">
+              <div class="qa-metric-item">
+                Score Achieved:
+                <strong>93.00 / 100.00</strong>
+              </div>
+              <div class="qa-metric-item">
+                Status:
+                <strong>Best Group in Class</strong>
+              </div>
+            </div>
+            <div class="tech-tags">
+              <span class="tech-tag">Figma Prototype</span>
+              <span class="tech-tag">Bootstrap 5</span>
+              <span class="tech-tag">Crazy 8's</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-card-footer">
+              <span class="project-company-badge">BABASTUDIO (2023)</span>
+              <a href="#test-runner" class="btn-pixel btn-secondary"
+                style="font-size: 0.65rem; padding: 0.4rem 0.8rem;">
+                VIEW DETAILS
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Test Runner Simulator Widget (Core Banking) -->
+  <section class="test-runner-section" id="test-runner">
+    <div class="container">
+      <div class="section-header-pixel">
+        <span class="section-icon">💻</span>
+        <h2 class="section-title pixel-heading">CORE BANKING TESTBED SIMULATOR</h2>
+        <span class="section-subtitle">[INTERACTIVE QA EXECUTION RUNNER]</span>
+      </div>
+
+      <div class="runner-terminal pixel-box">
+        <div class="runner-header">
+          <div class="terminal-dots">
+            <div class="dot dot-red"></div>
+            <div class="dot dot-yellow"></div>
+            <div class="dot dot-green"></div>
+          </div>
+          <span class="terminal-title">TERMINAL: bni-tiplus-testbed --module=import-export-gbo</span>
+          <button class="btn-pixel btn-primary" id="btn-run-tests" style="font-size: 0.65rem; padding: 0.4rem 0.8rem;">
+            ▶ JALANKAN TEST SUITE BANKING
+          </button>
+        </div>
+        <div class="terminal-body" id="terminal-log-body">
+          <div class="log-info">> [SYSTEM] Core Banking Test Engine Standby. Klik tombol "JALANKAN TEST SUITE BANKING"
+            di atas untuk mensimulasikan alur verifikasi Front-End, Back-End SQL settlement, dan validasi Join Testing
+            TIPlus.</div>
+          <div style="color: var(--text-muted); margin-top: 6px;">$ qa-runner --target=tiplus-core-banking
+            --validate-db=true</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Retro Arcade Mini-Game: QA Bug Slayer -->
+  <section class="game-section" id="arcade">
+    <div class="container">
+      <div class="section-header-pixel">
+        <span class="section-icon">👾</span>
+        <h2 class="section-title pixel-heading">QA BUG SLAYER ARCADE</h2>
+        <span class="section-subtitle">[MINI-GAME PEMBASMI DEFECT]</span>
+      </div>
+
+      <div class="arcade-cabinet pixel-box">
+        <div class="arcade-screen-header">
+          <div class="arcade-title-group">
+            <span style="font-size: 1.8rem;">🕹️</span>
+            <div>
+              <h3 class="pixel-heading" style="font-size: 0.9rem; color: var(--neon-cyan);">DEBUGGING MINI-GAME</h3>
+              <p class="arcade-text" style="font-size: 0.75rem; color: var(--text-muted);">Basmi glitch sinkronisasi
+                database & defect sebelum rilis produksi!</p>
+            </div>
+          </div>
+          <div class="arcade-score-board">
+            <div>SCORE: <span class="score-val" id="game-score-val">0</span></div>
+            <div>BUGS SLAYED: <span class="bugs-left-val" id="bugs-slayed-val">0</span></div>
+          </div>
+        </div>
+
+        <div class="arcade-game-arena">
+          <div class="game-slot"><span style="color: #30363d; font-size: 0.8rem;">[READY]</span></div>
+          <div class="game-slot"><span style="color: #30363d; font-size: 0.8rem;">[READY]</span></div>
+          <div class="game-slot"><span style="color: #30363d; font-size: 0.8rem;">[READY]</span></div>
+          <div class="game-slot"><span style="color: #30363d; font-size: 0.8rem;">[READY]</span></div>
+          <div class="game-slot"><span style="color: #30363d; font-size: 0.8rem;">[READY]</span></div>
+          <div class="game-slot"><span style="color: #30363d; font-size: 0.8rem;">[READY]</span></div>
+          <div class="game-slot"><span style="color: #30363d; font-size: 0.8rem;">[READY]</span></div>
+          <div class="game-slot"><span style="color: #30363d; font-size: 0.8rem;">[READY]</span></div>
+        </div>
+
+        <div class="game-controls-bar">
+          <span class="game-instruction">🎯 Tips: Setiap 5 bug yang di-resolve akan memicu suara fanfare level
+            up!</span>
+          <button class="btn-pixel btn-primary" id="btn-start-game">
+            ▶ START BUG SLAYER
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quest Log (Experience Timeline) -->
+  <section class="quest-section" id="quest-log">
+    <div class="container">
+      <div class="section-header-pixel">
+        <span class="section-icon">📜</span>
+        <h2 class="section-title pixel-heading">COMPLETED QUEST LOG</h2>
+        <span class="section-subtitle">[RIWAYAT PENGALAMAN KERJA]</span>
+      </div>
+
+      <div class="quest-timeline">
+        <!-- Quest 1 -->
+        <div class="quest-card">
+          <div class="quest-header">
+            <div>
+              <h3 class="quest-role">Quality Assurance Core Banking System</h3>
+              <div class="quest-company">PT. SWADHARMA DUTA DATA • Placement at PT Bank Negara Indonesia (Persero) Tbk.
+              </div>
+            </div>
+            <span class="quest-date">APRIL 2026 - PRESENT [CURRENT QUEST]</span>
+          </div>
+          <ul class="quest-bullets">
+            <li>Menjalankan <em>comprehensive regression testing</em> untuk workflow aplikasi <strong>TIPlus</strong>
+              dan limit kredit pada modul-modul kritis seperti <strong>Import, Export, dan Garansi Bank Online
+                (GBO)</strong>.</li>
+            <li>Melakukan pengujian <em>end-to-end Front-End dan Back-End</em>; memverifikasi antarmuka TIPlus, aliran
+              transaksi antar sistem sekitar, serta eksekusi kueri SQL database Back-End untuk validasi keberhasilan
+              pembayaran dan settlement.</li>
+            <li>Mengelola dan memvalidasi <em>hotfix</em> untuk defect/issue produksi, memonitor resolusi secara aktif,
+              dan memastikan kesiapan sesi <strong>User Acceptance Testing (UAT)</strong> bersama business user.</li>
+            <li>Mendukung inisiatif <em>workflow improvement (Phase 1)</em> untuk <strong>KCLN (Kantor Cabang Luar
+                Negeri) London</strong>, menyelaraskan workflow perbankan lokal dengan kebutuhan cabang internasional.
+            </li>
+          </ul>
+          <div class="quest-rewards">
+            <span class="reward-label">LOOT ACQUIRED:</span>
+            <span class="tech-tag">TIPlus Core Banking</span>
+            <span class="tech-tag">SQL DB Queries</span>
+            <span class="tech-tag">UAT Execution</span>
+            <span class="tech-tag">GBO & KCLN London</span>
+          </div>
+        </div>
+
+        <!-- Quest 2 -->
+        <div class="quest-card">
+          <div class="quest-header">
+            <div>
+              <h3 class="quest-role">Quality Assurance Core Banking System</h3>
+              <div class="quest-company">NTT DATA ID • Placement at PT Bank Negara Indonesia (Persero) Tbk.</div>
+            </div>
+            <span class="quest-date">OCT 2024 - APRIL 2026 [COMPLETED]</span>
+          </div>
+          <ul class="quest-bullets">
+            <li>Bertindak sebagai <strong>Co-coordinator</strong> untuk proyek <em>"Limit Trade System Import"</em>,
+              mengawasi sinkronisasi pengujian dan penyelarasan workflow, serta sebelumnya berkontribusi sebagai Junior
+              QA pada proyek <em>"Trade Workflow Improvement (Phase 1)"</em>.</li>
+            <li>Melakukan validasi menyeluruh pada komponen UI Front-End dan database Back-End, memastikan sinkronisasi
+              data transaksi sempurna antara core system dan aplikasi perbankan eksternal.</li>
+            <li>Dipercaya mengelola konfigurasi <em>production environment</em> untuk aplikasi Trade guna memastikan
+              stabilitas dan kesiapan sistem sebelum deployment live.</li>
+            <li>Mengeksekusi secara kumulatif <strong>3,000+ test case</strong> pada fase <em>Join Testing</em> untuk
+              kedua proyek guna menjamin cakupan kebutuhan bisnis yang menyeluruh.</li>
+            <li>Mengoptimalkan <em>defect management</em> dan pelaporan melalui kolaborasi intensif bersama Product
+              Owner, Project Manager, dan Developer.</li>
+          </ul>
+          <div class="quest-rewards">
+            <span class="reward-label">LOOT ACQUIRED:</span>
+            <span class="tech-tag">3,000+ Test Cases</span>
+            <span class="tech-tag">Co-coordinator</span>
+            <span class="tech-tag">Trade Applications</span>
+            <span class="tech-tag">Production Config</span>
+          </div>
+        </div>
+
+        <!-- Quest 3 -->
+        <div class="quest-card">
+          <div class="quest-header">
+            <div>
+              <h3 class="quest-role">QA Assistant | UX Researcher & Designer</h3>
+              <div class="quest-company">MSIB INTERNSHIP - EUREKA EDUTECH • Jakarta, Indonesia</div>
+            </div>
+            <span class="quest-date">AUG 2023 - DEC 2023 [COMPLETED]</span>
+          </div>
+          <ul class="quest-bullets">
+            <li>Membantu tim Quality Assurance dalam <em>manual testing</em> berbasis test case untuk website Content
+              Management System (CMS).</li>
+            <li>Melaporkan bug secara akurat kepada tim developer dan mengusulkan solusi melalui koordinasi tim QA dan
+              development.</li>
+            <li>Melakukan riset pengguna menggunakan model <em>Double Diamond</em>.</li>
+            <li>Berhasil menginovasi <strong>Landing Page Eureka Edutech</strong> dan merevamp CMS Divisi Bank Soal
+              untuk meningkatkan kepuasan pengguna dan efisiensi operasional.</li>
+            <li>Melakukan <em>usability testing</em> dengan fokus pada efektivitas, efisiensi, dan kepuasan pengguna.
+            </li>
+          </ul>
+          <div class="quest-rewards">
+            <span class="reward-label">LOOT ACQUIRED:</span>
+            <span class="tech-tag">Manual Testing</span>
+            <span class="tech-tag">Usability Testing</span>
+            <span class="tech-tag">Double Diamond UX</span>
+            <span class="tech-tag">CMS Revamp</span>
+          </div>
+        </div>
+
+        <!-- Quest 4 -->
+        <div class="quest-card">
+          <div class="quest-header">
+            <div>
+              <h3 class="quest-role">Database Lab Assistant</h3>
+              <div class="quest-company">BAKRIE UNIVERSITY • Jakarta, Indonesia</div>
+            </div>
+            <span class="quest-date">OCT 2022 - DEC 2022 [COMPLETED]</span>
+          </div>
+          <ul class="quest-bullets">
+            <li>Membimbing dan menjelaskan konsep *conceptual design*, *physical design*, dan penulisan **kueri SQL**
+              kepada mahasiswa, berhasil meningkatkan kualitas tugas akhir mahasiswa sebesar 15%.</li>
+            <li>Membantu dosen dalam komunikasi tugas lab, jadwal praktikum, dan evaluasi tugas akhir.</li>
+            <li>Mengorganisir dan mengevaluasi laporan aktivitas lab 20+ mahasiswa.</li>
+          </ul>
+          <div class="quest-rewards">
+            <span class="reward-label">LOOT ACQUIRED:</span>
+            <span class="tech-tag">SQL Querying</span>
+            <span class="tech-tag">Database Architecture</span>
+            <span class="tech-tag">Mentoring</span>
+            <span class="tech-tag">Lab Evaluation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education, Courses & Honors Section -->
+  <section class="education-section" id="education">
+    <div class="container">
+      <div class="section-header-pixel">
+        <span class="section-icon">🎓</span>
+        <h2 class="section-title pixel-heading">EDUCATION & CERTIFICATIONS</h2>
+        <span class="section-subtitle">[PENDIDIKAN & PENGHARGAAN]</span>
+      </div>
+
+      <!-- Education Card -->
+      <div class="edu-grid" style="margin-bottom: 2rem;">
+        <div class="edu-card">
+          <h3 class="edu-title">BAKRIE UNIVERSITY</h3>
+          <div class="edu-subtitle">Informatics Engineering (Teknik Informatika) • Jakarta, Indonesia</div>
+          <span class="edu-date">SEP 2020 - AUG 2024</span>
+          <p style="color: var(--text-sub); font-size: 0.9rem;">
+            <strong>Relevant Coursework:</strong> E-business, Database System, Advanced Database, Technology-Based
+            Entrepreneurship, Human-Computer Interaction, Web Development.
+          </p>
+        </div>
+      </div>
+
+      <!-- Honors & Certifications Grid -->
+      <h3 class="pixel-heading" style="font-size: 0.85rem; color: var(--xp-gold); margin-bottom: 1rem;">
+        📜 COURSES, CERTIFICATIONS & HONORS:
+      </h3>
+      <div class="honors-grid">
+        <div class="honor-item">
+          <span class="honor-icon">🏅</span>
+          <div class="honor-text">
+            <strong>IT Quality Assurance Engineer</strong>
+            SanberCode (2024)
+          </div>
+        </div>
+
+        <div class="honor-item">
+          <span class="honor-icon">🏆</span>
+          <div class="honor-text">
+            <strong>BPJS HealthKathon 2.0 Semi-Finalist</strong>
+            BPJS Kesehatan (2023)
+          </div>
+        </div>
+
+        <div class="honor-item">
+          <span class="honor-icon">🤖</span>
+          <div class="honor-text">
+            <strong>Basic QA Automation & API Automation</strong>
+            MySkill Certified
+          </div>
+        </div>
+
+        <div class="honor-item">
+          <span class="honor-icon">📋</span>
+          <div class="honor-text">
+            <strong>QA Test Activity</strong>
+            MySkill Certified
+          </div>
+        </div>
+
+        <div class="honor-item">
+          <span class="honor-icon">🗄️</span>
+          <div class="honor-text">
+            <strong>Belajar Dasar SQL & Web Dev</strong>
+            Dicoding Indonesia
+          </div>
+        </div>
+
+        <div class="honor-item">
+          <span class="honor-icon">👑</span>
+          <div class="honor-text">
+            <strong>Ketua Tim Program Kreativitas Mahasiswa (PKM)</strong>
+            Kemendikbud (2021) & Anggota Tim (2022)
+          </div>
+        </div>
+
+        <div class="honor-item">
+          <span class="honor-icon">🎓</span>
+          <div class="honor-text">
+            <strong>MSIB Studi Independen Kampus Merdeka</strong>
+            BabaStudio (2023)
+          </div>
+        </div>
+
+        <div class="honor-item">
+          <span class="honor-icon">💼</span>
+          <div class="honor-text">
+            <strong>MSIB Magang Kampus Merdeka</strong>
+            Eureka Edutech (2024)
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guild Hall / Contact Section -->
+  <section class="contact-section" id="guild-hall">
+    <div class="container">
+      <div class="guild-hall-box pixel-box">
+        <div style="font-size: 2.8rem; margin-bottom: 0.5rem;">🏰</div>
+        <h2 class="guild-title pixel-heading">LET'S CONNECT & COLLABORATE</h2>
+        <p class="guild-desc">
+          Sedang mencari <strong>Quality Assurance Specialist</strong> atau <strong>IT Business Analyst</strong> dengan
+          spesialisasi sistem perbankan, validasi SQL, dan manajemen UAT yang solid? Hubungi saya melalui tautan di
+          bawah ini:
+        </p>
+
+        <div style="margin-bottom: 1.75rem; font-size: 0.95rem; color: var(--text-main); line-height: 1.8;">
+          📍 <strong>Lokasi:</strong> Jakarta, Indonesia &nbsp;|&nbsp;
+          📞 <strong>Telepon/WA:</strong> +62 087882346039 &nbsp;|&nbsp;
+          ✉️ <strong>Email:</strong> sheilavaaa@gmail.com
+        </div>
+
+        <div class="social-loot-links">
+          <a href="mailto:sheilavaaa@gmail.com" class="btn-pixel btn-primary" id="btn-contact-email">
+            ✉️ EMAIL SHEILA
+          </a>
+          <a href="https://www.linkedin.com/in/sheila-riva-rezqian" target="_blank" rel="noopener noreferrer"
+            class="btn-pixel btn-secondary" id="btn-contact-linkedin">
+            💼 LINKEDIN PROFILE
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-pixel btn-secondary"
+            id="btn-contact-github">
+            🐙 GITHUB
+          </a>
+          <a href="https://wa.me/6287882346039" target="_blank" rel="noopener noreferrer" class="btn-pixel btn-success"
+            id="btn-contact-whatsapp">
+            💬 WHATSAPP
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-decor">★ PRESS START TO TEST EVERYTHING • ZERO DEFECT GOAL ★</div>
+      <p>&copy; 2026 Sheila Riva Rezqian. Built with Pixel Pride & Quality Assurance Precision.</p>
+    </div>
+  </footer>
+
+  <!-- Script Engine -->
+  <script src="portfolio.js"></script>
+</body>
+
+</html>
