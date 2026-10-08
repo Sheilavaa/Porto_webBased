@@ -43,7 +43,9 @@
 }
 
 /* ---------------- RESET & BASE ---------------- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -68,7 +70,7 @@ body {
   flex-direction: column;
   overflow-x: hidden;
   position: relative;
-  background: 
+  background:
     radial-gradient(circle at 15% 15%, rgba(189, 0, 255, 0.08) 0%, transparent 40%),
     radial-gradient(circle at 85% 80%, rgba(0, 240, 255, 0.08) 0%, transparent 40%),
     linear-gradient(180deg, #090d13 0%, #0d1117 100%);
@@ -129,12 +131,12 @@ body {
   font-size: 0.68rem;
   letter-spacing: 0.5px;
   line-height: 1.25;
-  padding: 0.8rem 1.3rem;
+  padding: 1.5rem 0.8rem;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem;
+  gap: 0.2rem;
   cursor: pointer;
   border: 3px solid #000;
   box-shadow: var(--pixel-shadow);
@@ -151,6 +153,7 @@ body {
   background-color: var(--neon-cyan);
   color: #000;
 }
+
 .btn-primary:hover {
   background-color: #55f7ff;
   box-shadow: 4px 4px 0px #000, 0 0 12px rgba(0, 240, 255, 0.5);
@@ -160,6 +163,7 @@ body {
   background-color: var(--neon-green);
   color: #000;
 }
+
 .btn-success:hover {
   background-color: #6aff4f;
   box-shadow: 4px 4px 0px #000, 0 0 12px rgba(57, 255, 20, 0.5);
@@ -170,6 +174,7 @@ body {
   color: var(--text-main);
   border-color: var(--border-pixel);
 }
+
 .btn-secondary:hover {
   background-color: var(--bg-card-hover);
   border-color: var(--text-muted);
@@ -179,6 +184,7 @@ body {
   background-color: var(--xp-gold);
   color: #000;
 }
+
 .btn-gold:hover {
   background-color: #ffe44d;
   box-shadow: 4px 4px 0px #000, 0 0 12px rgba(255, 215, 0, 0.5);
@@ -282,8 +288,8 @@ header {
 }
 
 .nav-link {
-  font-family: var(--font-body);
-  font-size: 0.92rem;
+  font-family: var(--font-pixel);
+  font-size: 0.70rem;
   font-weight: 600;
   letter-spacing: 0.2px;
   color: var(--text-sub);
@@ -328,10 +334,26 @@ header {
   height: 12px;
   background: var(--neon-cyan);
 }
-.hud-decor-corner.tl { top: 0; left: 0; }
-.hud-decor-corner.tr { top: 0; right: 0; }
-.hud-decor-corner.bl { bottom: 0; left: 0; }
-.hud-decor-corner.br { bottom: 0; right: 0; }
+
+.hud-decor-corner.tl {
+  top: 0;
+  left: 0;
+}
+
+.hud-decor-corner.tr {
+  top: 0;
+  right: 0;
+}
+
+.hud-decor-corner.bl {
+  bottom: 0;
+  left: 0;
+}
+
+.hud-decor-corner.br {
+  bottom: 0;
+  right: 0;
+}
 
 /* Player Avatar Card */
 .player-avatar-col {
@@ -365,8 +387,15 @@ header {
 }
 
 @keyframes floatPixel {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
 }
 
 .player-level-badge {
@@ -426,8 +455,15 @@ header {
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
 }
 
 /* Player Info / Stats Details */
@@ -525,18 +561,27 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background: repeating-linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.15),
-    rgba(255, 255, 255, 0.15) 4px,
-    transparent 4px,
-    transparent 8px
-  );
+  background: repeating-linear-gradient(45deg,
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0.15) 4px,
+      transparent 4px,
+      transparent 8px);
 }
 
-.hud-bar-fill.hp { background: var(--hp-red); width: 100%; }
-.hud-bar-fill.mp { background: var(--mana-blue); width: 95%; }
-.hud-bar-fill.xp { background: var(--xp-gold); width: 88%; }
+.hud-bar-fill.hp {
+  background: var(--hp-red);
+  width: 100%;
+}
+
+.hud-bar-fill.mp {
+  background: var(--mana-blue);
+  width: 95%;
+}
+
+.hud-bar-fill.xp {
+  background: var(--xp-gold);
+  width: 88%;
+}
 
 .hud-bar-val {
   font-family: var(--font-body);
@@ -721,9 +766,20 @@ header {
   border: 1px solid currentColor;
 }
 
-.rarity-legendary { color: var(--xp-gold); border-color: var(--xp-gold); }
-.rarity-epic { color: var(--neon-purple); border-color: var(--neon-purple); }
-.rarity-rare { color: var(--neon-cyan); border-color: var(--neon-cyan); }
+.rarity-legendary {
+  color: var(--xp-gold);
+  border-color: var(--xp-gold);
+}
+
+.rarity-epic {
+  color: var(--neon-purple);
+  border-color: var(--neon-purple);
+}
+
+.rarity-rare {
+  color: var(--neon-cyan);
+  border-color: var(--neon-cyan);
+}
 
 /* ---------------- FEATURED PROJECTS / DUNGEON LOGS ---------------- */
 .projects-section {
@@ -921,6 +977,7 @@ header {
 .score-val {
   color: var(--xp-gold);
 }
+
 .bugs-left-val {
   color: var(--hp-red);
 }
@@ -969,8 +1026,13 @@ header {
 }
 
 @keyframes bounceBug {
-  from { transform: scale(0.95); }
-  to { transform: scale(1.1); }
+  from {
+    transform: scale(0.95);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
 }
 
 .bug-label {
@@ -1025,14 +1087,24 @@ header {
   display: flex;
   gap: 6px;
 }
+
 .dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
 }
-.dot-red { background: #ff5f56; }
-.dot-yellow { background: #ffbd2e; }
-.dot-green { background: #27c93f; }
+
+.dot-red {
+  background: #ff5f56;
+}
+
+.dot-yellow {
+  background: #ffbd2e;
+}
+
+.dot-green {
+  background: #27c93f;
+}
 
 .terminal-title {
   font-family: 'Consolas', monospace;
@@ -1051,10 +1123,22 @@ header {
   color: #c9d1d9;
 }
 
-.log-pass { color: var(--neon-green); font-weight: bold; }
-.log-info { color: var(--neon-cyan); }
-.log-warn { color: var(--xp-gold); }
-.log-fail { color: var(--hp-red); }
+.log-pass {
+  color: var(--neon-green);
+  font-weight: bold;
+}
+
+.log-info {
+  color: var(--neon-cyan);
+}
+
+.log-warn {
+  color: var(--xp-gold);
+}
+
+.log-fail {
+  color: var(--hp-red);
+}
 
 /* ---------------- QUEST LOG (EXPERIENCE TIMELINE) ---------------- */
 .quest-section {
@@ -1361,7 +1445,8 @@ footer {
 
 @media (max-width: 680px) {
   .nav-menu {
-    display: none; /* simple UX on mobile */
+    display: none;
+    /* simple UX on mobile */
   }
 
   .arcade-screen-header {
@@ -1377,6 +1462,7 @@ footer {
   .quest-timeline {
     padding-left: 1.5rem;
   }
+
   .quest-card::before {
     left: -2.35rem;
     width: 26px;
