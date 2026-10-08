@@ -575,7 +575,7 @@ header {
 
 .hud-bar-fill.mp {
   background: var(--mana-blue);
-  width: 95%;
+  width: 75%;
 }
 
 .hud-bar-fill.xp {
